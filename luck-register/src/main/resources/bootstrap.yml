@@ -1,0 +1,24 @@
+spring:
+  #应用配置
+  application:
+    name: luck-registry
+  #配置服务器
+  cloud:
+    config:
+      uri: http://luck-config:8888
+      fail-fast: true
+      #password: ${SERVICE_CONFIG_PASSWORD}
+      username: user
+      password: root
+
+#注册中心配
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
+
+#debug: true   

@@ -1,0 +1,12 @@
+127.0.0.1       luck-config
+127.0.0.1       luck-registry
+127.0.0.1       luck-gateway
+127.0.0.1       luck-monitoring
+127.0.0.1       luck-storage
+
+127.0.0.1       luck-service-account
+127.0.0.1       luck-service-auth
+127.0.0.1       luck-service-notification
+127.0.0.1       luck-service-statistics
+127.0.0.1       luck-service-user-claim
+127.0.0.1       luck-service-vip

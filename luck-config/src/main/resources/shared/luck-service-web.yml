@@ -1,0 +1,13 @@
+security:
+  oauth2:
+    client:
+      clientId: luck-service-web
+      #clientSecret: ${SERVICE_ACCOUNT_PASSWORD}
+      clientSecret: root
+      accessTokenUri: http://luck-service-auth:5000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+server:
+  context-path: /web
+  port: 11111

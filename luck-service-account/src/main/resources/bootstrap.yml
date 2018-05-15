@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: luck-service-account
+  cloud:
+    config:
+      #uri: http://config:8888
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+      #password: ${CONFIG_SERVICE_PASSWORD}
+      password: root
+      username: user

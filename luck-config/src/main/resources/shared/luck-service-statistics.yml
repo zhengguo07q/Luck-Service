@@ -1,0 +1,25 @@
+security:
+  oauth2:
+    client:
+      clientId: luck-service-statistics
+      #clientSecret: ${SERVICE_STATISTICS_PASSWORD}
+      clientSecret: root
+      accessTokenUri: http://luck-service-auth:5000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+spring:
+  data:
+    mongodb:
+      host: luck-storage
+      username: user
+      #password: ${MONGODB_PASSWORD}
+      database: statistics
+      port: 27017
+
+server:
+  context-path: /statistics
+  port: 7000
+
+rates:
+  url: http://api.fixer.io

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: luck-monitoring
+  cloud:
+    config:
+      uri: http://luck-config:8888
+      fail-fast: true
+      #password: ${CONFIG_SERVICE_PASSWORD}
+      password: root
+      username: user

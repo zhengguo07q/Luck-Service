@@ -1,0 +1,35 @@
+#整个服务器组都拥有的配置
+
+#日志
+logging:
+  level:
+    org.springframework.security: INFO
+
+#雪崩机制
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+#服务发现与注册
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://luck-registry:8761/eureka/
+
+#安全
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://luck-service-auth:5000/uaa/users/current
+
+#消息队列
+spring:
+  rabbitmq:
+    #host: rabbitmq
+    host: 127.0.0.1

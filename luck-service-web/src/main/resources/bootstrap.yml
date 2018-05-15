@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: luck-service-web
+  cloud:
+    config:
+      uri: http://luck-config:8888
+      fail-fast: true
+      #password: ${CONFIG_SERVICE_PASSWORD}
+      password: root
+      username: user
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    prefix: classpath:/templates/
+    mode: LEGACYHTML5
